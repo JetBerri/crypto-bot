@@ -1,0 +1,13 @@
+[Unit]
+Description=BTC Bot Service
+After=network.target
+
+[Service]
+User=your_username
+Group=your_groupname
+Restart=always
+RestartSec=3
+ExecStart=/path/to/your/scripts/directory/run_btc_bot.sh
+
+[Install]
+WantedBy=multi-user.target
